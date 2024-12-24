@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose a port for Koyeb deployment (not required for Telegram bot but useful for debugging)
-EXPOSE 80
+EXPOSE 8000
 
 # Run the Python bot
 CMD ["python", "telegram_bot.py"]
